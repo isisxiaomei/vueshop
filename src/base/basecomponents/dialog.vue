@@ -1,6 +1,6 @@
 <template>
   <div class="dialog-wrapper">
-    <el-dialog :title="title" :visible="dialogVisible">
+    <el-dialog :title="title" :visible="dialogVisible" @close="cancelDialog">
       <div class="dialog-content">
         <slot />
       </div>

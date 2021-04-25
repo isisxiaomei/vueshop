@@ -1161,7 +1161,7 @@ type=tree
 | goods_cat       | 以为','分割的分类列表                             | 不能为空 |
 | goods_price     | 价格                                              | 不能为空 |
 | goods_number    | 数量                                              | 不能为空 |
-| goods_weight    | 重量                                              | 不能为空 |
+| goods_weight    | 重量                                   ****       | 不能为空 |
 | goods_introduce | 介绍                                              | 可以为空 |
 | pics            | 上传的图片临时路径（对象）                        | 可以为空 |
 | attrs           | 商品的参数（数组），包含 `动态参数` 和 `静态属性` | 可以为空 |

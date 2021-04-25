@@ -9,6 +9,7 @@ import Params from "../components/goods/Params.vue";
 import List from "../components/goods/List.vue";
 import Add from "../components/goods/Add.vue";
 import Report from "../components/report/Report.vue";
+import Order from "../components/order/order.vue";
 import PermissionList from "../components/permission/PermissionList.vue";
 import PermissionRole from "../components/permission/PermissionRole.vue";
 
@@ -32,6 +33,7 @@ const routes = [
       { path: "/goods-list", component: List },
       { path: "/goods-add", component: Add },
       { path: "/reports-list", component: Report },
+      { path: "/order-list", component: Order },
     ]
   },
 
