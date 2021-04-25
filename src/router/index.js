@@ -6,6 +6,8 @@ import Welcome from "../components/Welcome.vue";
 import User from "../components/user/Users.vue";
 import Cate from "../components/goods/Cate.vue";
 import Params from "../components/goods/Params.vue";
+import List from "../components/goods/List.vue";
+import Add from "../components/goods/Add.vue";
 import PermissionList from "../components/permission/PermissionList.vue";
 import PermissionRole from "../components/permission/PermissionRole.vue";
 
@@ -25,7 +27,9 @@ const routes = [
       { path: "/permission-list", component: PermissionList },
       { path: "/permission-roles", component: PermissionRole },
       { path: "/goods-sort", component: Cate },
-      { path: "/sort-param", component: Params }
+      { path: "/sort-param", component: Params },
+      { path: "/goods-list", component: List },
+      { path: "/goods-add", component: Add },
     ]
   },
 

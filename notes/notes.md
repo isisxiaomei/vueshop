@@ -83,9 +83,35 @@ npm install less less-loader --save-dev
 
 post请求还需要给参数进行编码
 
+## 图片上传（参见Add.vue）
+
+el-upload组件上传图片不走axios请求，所以之前在axios请求拦截器中添加token，也带不到upload上传中，需要手动给el-upload指定header
+
 # 项目设计把控
 
 路由层面
+
+
+# 插件
+
+```js
+// 富文本编辑器插件
+npm install vue-quill-editor --save
+
+// 树形table
+npm install vue-table-with-tree-grid --save
+
+lodash库 cloneDeep
+```
+
+
+## scoped问题
+
+scoped中设置的样式只会对当前vue组件生效，并不对当前组件内部的子组件生效
+
+我们在scoped样式中，设置元素样式，被设置的元素样式都带有类似`data-v-1233`这种class，这是scoped添加的元素样式唯一。
+
+如果在A.vue组件中使用了比如富文本编辑器`vue-quill-editor`，那么scoped中没办法设置它的样式，此时可以去全局App.vue中设置，我们App.vue相当于根容器，没有设置scoped，所以是可以设置的
 
 
 
