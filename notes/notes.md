@@ -101,7 +101,7 @@ npm install vue-quill-editor --save
 // 树形table
 npm install vue-table-with-tree-grid --save
 
-lodash库 cloneDeep
+lodash库 clonecd
 ```
 
 
